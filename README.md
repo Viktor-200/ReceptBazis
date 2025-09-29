@@ -1,0 +1,2 @@
+# ReceptBazis
+ReceptBázis projekt repója.
