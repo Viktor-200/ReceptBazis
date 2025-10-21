@@ -1,2 +1,9 @@
 # ReceptBazis
-ReceptBázis projekt repója.
+
+Ötletek:
+
+"Főző suli"/"konyhai alapmuveletek" 
+filter szerű keresés / Keresés
+recept értékelés 
+hozzászoólások
+napi random ajánlatok
