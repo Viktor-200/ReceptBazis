@@ -5,3 +5,15 @@ filter szerű keresés / Keresés ,
 recept értékelés ,
 hozzászoólások ,
 napi random ajánlatok ,
+
+-egy alap par opcios "tulajdonsagos" (fajta szerinti keresés) es oldalt csinalni
+adatbázisba kb 50 receptet beirni tesztként 
+-meg egy oldalt csinalni alapműveleteknek : innen ki lehet irni majd szpépíteni kicsit rajta 
+https://szellemafazekban.blogspot.com/2009/05/konyhai-alapmuveletek-alapkifejezesek.html
+//ehez nem kell hozzászólás/interakciós rész ehez a gomb/oldalhoz szerintem 
+//ezeket majd megcsinálom sztm -mark
+
+-ha a teszt a keresésnél jól megy akkor ki lehet bővíteni a maradék opciókkal és lehet vagy par 100 - vagy 300 receptet bele tenni ez egy par napig eltarthat :/
+
+//esetleg még opciókat a kinézettel kapcsolatban nem csak a monochrome cucc hanem pl vilagos barna fekete logoval ilyesmik
+//a commenteket "disqus" al meglehetne oldani és akkor nem kell külön csinálni egy egész komment szekciót hanem a "disqus"-t kellene beleépíteni a kódba
