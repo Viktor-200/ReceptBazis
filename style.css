@@ -10,7 +10,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* HEADER */
 .header {
     position: fixed;
     top: 0;
@@ -34,7 +33,6 @@ body {
     width: auto;
 }
 
-/* KONYHAI SEGÉDLETEK – TÉMAFÜGGŐ */
 .helper-link {
     margin-left: 15px;
     font-weight: bold;
@@ -50,14 +48,12 @@ body.light-mode .helper-link {
     color: #222;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* 🔘 TÉMA GOMB */
 .theme-toggle-btn {
     padding: 10px;
     border: none;
@@ -78,7 +74,6 @@ body.light-mode .helper-link {
     text-decoration: none;
 }
 
-/* TOP SEARCH */
 .top-search {
     position: fixed;
     top: 90px;
@@ -112,7 +107,6 @@ body.light-mode .helper-link {
     cursor: pointer;
 }
 
-/* TÉMAFÜGGŐ INPUT */
 body.dark-mode .top-search input {
     background-color: #2e2e38;
     color: white;
@@ -123,17 +117,14 @@ body.light-mode .top-search input {
     color: black;
 }
 
-/* CONTENT */
 .content {
     margin-top: 280px;
     text-align: center;
 }
 
-/* FADE */
 .fade-in { opacity: 1; transition: opacity 2s; }
 .fade-out { opacity: 0; }
 
-/* TÉMÁK */
 body.dark-mode {
     background-color: #17161B;
     color: white;
@@ -144,7 +135,6 @@ body.light-mode {
     color: black;
 }
 
-/* ICON COLOR */
 body.dark-mode .theme-toggle-btn i {
     color: white;
 }
@@ -153,7 +143,6 @@ body.light-mode .theme-toggle-btn i {
     color: #333;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     #logo { max-height: 120px; }
     .top-search input { width: 300px; }

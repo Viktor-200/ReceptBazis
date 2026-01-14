@@ -30,7 +30,7 @@ if (isset($_GET['search'])) {
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        /* Táblázat stílus */
+        
         table {
             width: 90%;
             max-width: 1200px;
@@ -65,11 +65,10 @@ if (isset($_GET['search'])) {
             border-color: #ccc;
         }
 
-        /* Kereső a fejléc alatt */
         .top-search {
             display: flex;
             justify-content: center;
-            margin-top: 200px; /* távolság a header aljától */
+            margin-top: 200px;
         }
 
         .top-search input[type="text"] {
@@ -97,7 +96,6 @@ if (isset($_GET['search'])) {
             cursor: pointer;
         }
 
-        /* Témaváltó gomb stílus indexhez hasonló */
         #toggleBtn {
             background-color: transparent;
             border: none;
@@ -155,7 +153,7 @@ if (isset($_GET['search'])) {
             <tr><td>Angolos bundázás</td><td>A bundázás egyik ismert formája. Azt jelenti, hogy a húst, a halat vagy egyéb sütni kívánt alapanyagot előbb olvasztott vajba mártjuk, majd zsemlemorzsába forgatjuk és kisütjük.</td></tr>
             <tr><td>Angolos-ra (rare) sütés</td><td>Az egészen angolos pecsenyének csak a külső pereme sül át, a hús közepe felé haladva egyre nyersebb, a hús közepe pedig teljesen nyers, véres.</td></tr>
             <tr><td>Aszpik</td><td>A hidegkonyha egyik legfontosabb alapanyaga. Készíthető csontokból, bőrökből, zselatinból is. Célja hogy megvédje a tálra kitett pecsenyéket a kiszáradástól, emellett szép csillogó is lesz tőle az étel.</td></tr>
-            
+
         </tbody>
     </table>
 </div>
