@@ -20,9 +20,7 @@ function applyTheme() {
     }
 }
 
-
 applyTheme();
-
 
 toggleBtn.addEventListener("click", () => {
     isDarkMode = !isDarkMode;
