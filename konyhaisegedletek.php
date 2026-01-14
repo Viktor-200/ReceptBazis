@@ -30,11 +30,114 @@ if (isset($_GET['search'])) {
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        
-        table {
+        /* HEADER */
+        .header {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #17161B;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.light-mode .header {
+            background-color: #fff;
+            color: black;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            max-height: 150px;
+            width: auto;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #toggleBtn {
+            padding: 10px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+        }
+
+        #signoutBtn {
+            padding: 10px 20px;
+            background-color: #5e9cff;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        /* FIX KERESŐ, INDEX STÍLUS */
+        .fixed-search-container {
+            position: fixed;
+            top: 120px; /* logó alatt */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .fixed-search-container form {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .fixed-search-container input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            background-color: #555;
+            color: white;
+        }
+
+        body.light-mode .fixed-search-container input[type="text"] {
+            background-color: #eee;
+            color: black;
+        }
+
+        .fixed-search-container button {
+            padding: 10px 15px;
+            background-color: #5e9cff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* CONTENT */
+        .content {
+            padding-top: 250px; /* a logó és kereső alatt */
             width: 90%;
             max-width: 1200px;
-            margin: 30px auto;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
             border-collapse: collapse;
         }
 
@@ -50,11 +153,6 @@ if (isset($_GET['search'])) {
             color: white;
         }
 
-        body.dark-mode th {
-            background-color: #5e9cff;
-            color: white;
-        }
-
         body.dark-mode td {
             color: white;
             border-color: #666;
@@ -63,46 +161,6 @@ if (isset($_GET['search'])) {
         body.light-mode td {
             color: black;
             border-color: #ccc;
-        }
-
-        .top-search {
-            display: flex;
-            justify-content: center;
-            margin-top: 200px;
-        }
-
-        .top-search input[type="text"] {
-            width: 400px;
-            padding: 10px;
-            border-radius: 4px;
-            border: 1px solid #555;
-            background-color: #555;
-            color: white;
-        }
-
-        body.light-mode .top-search input[type="text"] {
-            background-color: #eee;
-            color: black;
-            border: 1px solid #ccc;
-        }
-
-        .top-search button {
-            padding: 10px 15px;
-            margin-left: 10px;
-            background-color: #5e9cff;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            cursor: pointer;
-        }
-
-        #toggleBtn {
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            font-size: 24px;
-            padding: 8px;
-            border-radius: 50%;
         }
     </style>
 </head>
@@ -129,7 +187,7 @@ if (isset($_GET['search'])) {
 </div>
 
 <?php if (isset($_SESSION['username'])): ?>
-<div class="top-search">
+<div class="fixed-search-container">
     <form method="GET">
         <input type="text" name="search" placeholder="Keress receptek között..." required>
         <button type="submit">Keresés</button>
@@ -153,7 +211,6 @@ if (isset($_GET['search'])) {
             <tr><td>Angolos bundázás</td><td>A bundázás egyik ismert formája. Azt jelenti, hogy a húst, a halat vagy egyéb sütni kívánt alapanyagot előbb olvasztott vajba mártjuk, majd zsemlemorzsába forgatjuk és kisütjük.</td></tr>
             <tr><td>Angolos-ra (rare) sütés</td><td>Az egészen angolos pecsenyének csak a külső pereme sül át, a hús közepe felé haladva egyre nyersebb, a hús közepe pedig teljesen nyers, véres.</td></tr>
             <tr><td>Aszpik</td><td>A hidegkonyha egyik legfontosabb alapanyaga. Készíthető csontokból, bőrökből, zselatinból is. Célja hogy megvédje a tálra kitett pecsenyéket a kiszáradástól, emellett szép csillogó is lesz tőle az étel.</td></tr>
-
         </tbody>
     </table>
 </div>
