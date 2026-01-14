@@ -30,7 +30,7 @@ if (isset($_GET['search'])) {
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        /* HEADER */
+        
         .header {
             position: relative;
             top: 0;
@@ -85,10 +85,9 @@ if (isset($_GET['search'])) {
             text-decoration: none;
         }
 
-        /* FIX KERESŐ, INDEX STÍLUS */
         .fixed-search-container {
             position: fixed;
-            top: 120px; /* logó alatt */
+            top: 120px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1001;
@@ -128,9 +127,8 @@ if (isset($_GET['search'])) {
             flex-shrink: 0;
         }
 
-        /* CONTENT */
         .content {
-            padding-top: 250px; /* a logó és kereső alatt */
+            padding-top: 250px;
             width: 90%;
             max-width: 1200px;
             margin: auto;
