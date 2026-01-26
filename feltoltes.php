@@ -13,8 +13,8 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $title = $conn->real_escape_string($_POST['title']);
-    $description = $conn->real_escape_string($_POST['description']);
+    $title = $_POST['title'];
+    $description = $_POST['description'];
     
     $target_dir = "uploads/";
     
