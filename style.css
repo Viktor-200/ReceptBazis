@@ -13,7 +13,7 @@ body {
 }
 
 body.dark-mode {
-    background-color: #17161B;
+    background-color: #201F24;
     color: white;
 }
 
@@ -86,8 +86,8 @@ body.light-mode .form-container input {
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
-    background-color: #201f24;
+    height: 100px;
+    background-color: #17161B;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -361,7 +361,7 @@ body.light-mode .recipe-detail {
     left: 0;
     right: 0;
     height: 60px;
-    background-color: #201f24;
+    background-color: #17161B;
     display: flex;
     justify-content: center;
     align-items: center;
